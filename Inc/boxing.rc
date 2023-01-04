@@ -1,0 +1,261 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 699, 442
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Boxing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "选择关卡",IDC_REMAKE,192,6,71,30,0,WS_EX_TRANSPARENT
+    CTEXT           "地图",IDC_LEVEL,288,6,48,16,SS_CENTERIMAGE
+    CTEXT           "玩家A得分",IDC_SCORE1,52,6,48,16,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "0",IDC_SCORETEXT1,52,18,48,16,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "0",IDC_LEVELTEXT,288,18,48,16,SS_CENTERIMAGE
+    PUSHBUTTON      "重置",IDC_NEW,432,6,70,30,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Button2",IDC_BLEVEL1,192,149,50,30,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL2,258,149,50,30,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL3,324,149,50,30,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL4,390,149,50,30,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL5,456,149,50,30,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL6,192,191,50,29,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL7,258,191,50,29,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL8,324,191,50,29,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL9,390,191,50,29,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_BLEVEL10,456,191,50,29,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "U2_RESTART",IDC_U2_RESTART,314,421,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "U2_ATTACK",IDC_U2_ATTACK,248,421,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "U1_RESTART",IDC_U1_RESTART,315,394,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "U1_ATTACK",IDC_U1_ATTACK,248,394,48,14,NOT WS_VISIBLE
+    GROUPBOX        "选择游戏模式",IDC_Modes,165,85,367,40,NOT WS_VISIBLE
+    CONTROL         "砍砍砍",IDC_MODE1,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY | NOT WS_VISIBLE | WS_GROUP | WS_TABSTOP,189,102,42,10,WS_EX_TRANSPARENT
+    CONTROL         "击鼓传花",IDC_MODE2,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,327,102,50,10,WS_EX_TRANSPARENT
+    CONTROL         "恐怖袭击",IDC_MODE3,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_TABSTOP,470,102,50,10
+    CTEXT           "0",IDC_MODETEXT,360,18,48,16,SS_CENTERIMAGE
+    CTEXT           "游戏模式",IDC_MODE,360,6,48,16,SS_CENTERIMAGE
+    CTEXT           "玩家B得分",IDC_SCORE2,598,6,48,16,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "0",IDC_SCORETEXT2,598,18,48,16,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | PBS_SMOOTHREVERSE | WS_BORDER,37,42,624,6
+    CONTROL         IDB_BITMAP_CONTROL,IDC_INFO,"Static",SS_BITMAP | SS_CENTERIMAGE | NOT WS_VISIBLE,171,227,355,175
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 692
+        VERTGUIDE, 20
+        VERTGUIDE, 60
+        VERTGUIDE, 72
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 435
+        HORZGUIDE, 20
+        HORZGUIDE, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "控制(&C)"
+    BEGIN
+        MENUITEM "新游戏(&N)",                     ID_NEW
+        MENUITEM "退出(&E)",                      ID_EXIT
+    END
+    POPUP "帮助(H)"
+    BEGIN
+        MENUITEM "关于(&A)",                      ID_ABOUT
+        MENUITEM "作者(&W)",                      ID_WRITER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR2 ACCELERATORS
+BEGIN
+    "A",            ID_ABOUT,               VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EXIT,                VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_NEW,                 VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_WRITER,              VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       IDC_U1_ATTACK,          VIRTKEY, NOINVERT
+    VK_HOME,        IDC_U1_RESTART,         VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_U2_ATTACK,          VIRTKEY, NOINVERT
+    "R",            IDC_U2_RESTART,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BOMB         BITMAP                  "..\\Assets\\bomb.bmp"
+
+IDB_BITMAP_BOX          BITMAP                  "..\\Assets\\box.bmp"
+
+IDB_BITMAP_BOX_BROKEN   BITMAP                  "..\\Assets\\box_broken.bmp"
+
+IDB_BITMAP_BRIDGE       BITMAP                  "..\\Assets\\brige.bmp"
+
+IDB_BITMAP_EMPTY        BITMAP                  "..\\Assets\\empty.bmp"
+
+IDB_BITMAP_FENCE        BITMAP                  "..\\Assets\\fence.bmp"
+
+IDB_BITMAP_LEVEL_1      BITMAP                  "..\\Assets\\level-1.bmp"
+
+IDB_BITMAP_LEVEL_2      BITMAP                  "..\\Assets\\level-2.bmp"
+
+IDB_BITMAP_LEVEL_3      BITMAP                  "..\\Assets\\level-3.bmp"
+
+IDB_BITMAP_LEVEL_4      BITMAP                  "..\\Assets\\level-4.bmp"
+
+IDB_BITMAP_LEVEL_5      BITMAP                  "..\\Assets\\level-5.bmp"
+
+IDB_BITMAP_LEVEL_6      BITMAP                  "..\\Assets\\level-6.bmp"
+
+IDB_BITMAP_LEVEL_7      BITMAP                  "..\\Assets\\level-7.bmp"
+
+IDB_BITMAP_LEVEL_8      BITMAP                  "..\\Assets\\level-8.bmp"
+
+IDB_BITMAP_LEVEL_9      BITMAP                  "..\\Assets\\level-9.bmp"
+
+IDB_BITMAP_LEVEL_10     BITMAP                  "..\\Assets\\level-10.bmp"
+
+IDB_BITMAP_PATH         BITMAP                  "..\\Assets\\path.bmp"
+
+IDB_BITMAP_PLAYER1_DOWN BITMAP                  "..\\Assets\\player1_down.bmp"
+
+IDB_BITMAP_PLAYER1_HIT  BITMAP                  "..\\Assets\\player1_hit.bmp"
+
+IDB_BITMAP_PLAYER1_LEFT BITMAP                  "..\\Assets\\player1_left.bmp"
+
+IDB_BITMAP_PLAYER1_RIGHT BITMAP                  "..\\Assets\\player1_right.bmp"
+
+IDB_BITMAP_PLAYER1_UP   BITMAP                  "..\\Assets\\player1_up.bmp"
+
+IDB_BITMAP_PLAYER2_DOWN BITMAP                  "..\\Assets\\player2_down.bmp"
+
+IDB_BITMAP_PLAYER2_HIT  BITMAP                  "..\\Assets\\player2_hit.bmp"
+
+IDB_BITMAP_PLAYER2_LEFT BITMAP                  "..\\Assets\\player2_left.bmp"
+
+IDB_BITMAP_PLAYER2_RIGHT BITMAP                  "..\\Assets\\player2_right.bmp"
+
+IDB_BITMAP_PLAYER2_UP   BITMAP                  "..\\Assets\\player2_up.bmp"
+
+IDB_BITMAP_SPLASH       BITMAP                  "..\\Assets\\splash.bmp"
+
+IDB_BITMAP_TREASURE     BITMAP                  "..\\Assets\\treasure.bmp"
+
+IDB_BITMAP_TREE         BITMAP                  "..\\Assets\\tree.bmp"
+
+IDB_BITMAP_WALL         BITMAP                  "..\\Assets\\wall2.bmp"
+
+IDB_BITMAP_WATER        BITMAP                  "..\\Assets\\water.bmp"
+
+IDB_BITMAP_AWARD1       BITMAP                  "..\\Assets\\win_p1.bmp"
+
+IDB_BITMAP_AWARD2       BITMAP                  "..\\Assets\\win_p2.bmp"
+
+IDB_BITMAP_CONTROL      BITMAP                  "..\\Assets\\control.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE                    "..\\Assets\\game1-8bit.wav"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
